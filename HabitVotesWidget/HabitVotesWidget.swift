@@ -65,11 +65,11 @@ struct HabitVotesWidgetView: View {
                 Spacer()
                 Text("\(entry.completed)/\(entry.scheduled)")
                     .font(.caption.weight(.bold))
-                    .foregroundStyle(.accent)
+                    .foregroundStyle(Color.accentColor)
             }
 
             ProgressView(value: progress)
-                .tint(.accent)
+                .tint(.accentColor)
 
             VStack(alignment: .leading, spacing: 3) {
                 Text(entry.nextHabitTitle)

@@ -1,4 +1,5 @@
 import Charts
+import HabitVotesCore
 import SwiftUI
 
 struct WeeklyProgressChart: View {
