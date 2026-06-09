@@ -7,9 +7,24 @@ OUTPUT_DIR="$ROOT_DIR/build/Appetize"
 APP_PATH="$DERIVED_DATA/Build/Products/Debug-iphonesimulator/HabitVotes.app"
 ZIP_PATH="$OUTPUT_DIR/HabitVotes-Appetize.zip"
 LOG_PATH="$OUTPUT_DIR/xcodebuild.log"
+PROJECT_FILE="$ROOT_DIR/HabitVotes.xcodeproj/project.pbxproj"
+PROJECT_BACKUP="$OUTPUT_DIR/project.pbxproj.backup"
 
 rm -rf "$DERIVED_DATA" "$OUTPUT_DIR"
 mkdir -p "$OUTPUT_DIR"
+cp "$PROJECT_FILE" "$PROJECT_BACKUP"
+
+restore_project() {
+  cp "$PROJECT_BACKUP" "$PROJECT_FILE"
+}
+
+trap restore_project EXIT
+
+# Appetize needs only the main simulator .app bundle. The widget remains in the
+# Xcode project, but is skipped here to avoid extension/app-group signing issues
+# in anonymous CI simulator builds.
+perl -0pi -e 's/\n\t\t\t\t10000000000000000000001E \/\* HabitVotesWidget\.appex in Embed Foundation Extensions \*\/,//' "$PROJECT_FILE"
+perl -0pi -e 's/\n\t\t\t\t770000000000000000000001 \/\* PBXTargetDependency \*\/,//' "$PROJECT_FILE"
 
 xcodebuild \
   -project "$ROOT_DIR/HabitVotes.xcodeproj" \
