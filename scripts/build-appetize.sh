@@ -6,6 +6,7 @@ DERIVED_DATA="$ROOT_DIR/build/DerivedData"
 OUTPUT_DIR="$ROOT_DIR/build/Appetize"
 APP_PATH="$DERIVED_DATA/Build/Products/Debug-iphonesimulator/HabitVotes.app"
 ZIP_PATH="$OUTPUT_DIR/HabitVotes-Appetize.zip"
+TAR_PATH="$OUTPUT_DIR/HabitVotes-Appetize.tar.gz"
 LOG_PATH="$OUTPUT_DIR/xcodebuild.log"
 PROJECT_FILE="$ROOT_DIR/HabitVotes.xcodeproj/project.pbxproj"
 PROJECT_BACKUP="$OUTPUT_DIR/project.pbxproj.backup"
@@ -43,6 +44,8 @@ fi
 (
   cd "$(dirname "$APP_PATH")"
   zip -qry "$ZIP_PATH" "$(basename "$APP_PATH")"
+  tar -czf "$TAR_PATH" "$(basename "$APP_PATH")"
 )
 
 echo "Created $ZIP_PATH"
+echo "Created $TAR_PATH"

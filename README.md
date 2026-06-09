@@ -96,7 +96,16 @@ You can also build it in GitHub Actions:
 2. Open the Actions tab.
 3. Run `Build Appetize Simulator App`.
 4. Download the `HabitVotes-Appetize` artifact.
-5. Upload `HabitVotes-Appetize.zip` to Appetize.
+5. Unzip the GitHub artifact once.
+6. Upload `HabitVotes-Appetize.zip` or `HabitVotes-Appetize.tar.gz` to Appetize.
+
+The workflow also publishes a direct release asset at:
+
+```text
+https://github.com/amiamiswebsite/atomic-habits-app/releases/tag/appetize-latest
+```
+
+From that release, download `HabitVotes-Appetize.zip` or `HabitVotes-Appetize.tar.gz` and upload it directly to Appetize without unzipping.
 
 ## Run On Physical iPhone
 

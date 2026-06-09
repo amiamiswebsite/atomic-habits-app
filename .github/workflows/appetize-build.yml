@@ -6,6 +6,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   build-appetize-zip:
     name: Build HabitVotes.app zip
@@ -40,5 +43,18 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: HabitVotes-Appetize
-          path: build/Appetize/HabitVotes-Appetize.zip
+          path: |
+            build/Appetize/HabitVotes-Appetize.zip
+            build/Appetize/HabitVotes-Appetize.tar.gz
           if-no-files-found: error
+
+      - name: Publish direct download release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete appetize-latest --yes --cleanup-tag || true
+          gh release create appetize-latest \
+            build/Appetize/HabitVotes-Appetize.zip \
+            build/Appetize/HabitVotes-Appetize.tar.gz \
+            --title "Latest Appetize Build" \
+            --notes "Download one of these files and upload it directly to Appetize. Do not unzip it first."
