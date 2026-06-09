@@ -4,7 +4,7 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 DERIVED_DATA="$ROOT_DIR/build/DerivedData"
 OUTPUT_DIR="$ROOT_DIR/build/Appetize"
-APP_PATH="$DERIVED_DATA/Build/Products/Debug-iphonesimulator/HabitVotes.app"
+APP_PATH="$DERIVED_DATA/Build/Products/Release-iphonesimulator/HabitVotes.app"
 ZIP_PATH="$OUTPUT_DIR/HabitVotes-Appetize.zip"
 TAR_PATH="$OUTPUT_DIR/HabitVotes-Appetize.tar.gz"
 LOG_PATH="$OUTPUT_DIR/xcodebuild.log"
@@ -30,7 +30,7 @@ perl -0pi -e 's/\n\t\t\t\t770000000000000000000001 \/\* PBXTargetDependency \*\/
 xcodebuild \
   -project "$ROOT_DIR/HabitVotes.xcodeproj" \
   -scheme HabitVotes \
-  -configuration Debug \
+  -configuration Release \
   -sdk iphonesimulator \
   -derivedDataPath "$DERIVED_DATA" \
   CODE_SIGNING_ALLOWED=NO \
