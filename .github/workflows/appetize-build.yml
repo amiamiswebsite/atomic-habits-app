@@ -1,0 +1,36 @@
+name: Build Appetize Simulator App
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-appetize-zip:
+    name: Build HabitVotes.app zip
+    runs-on: macos-15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Show Xcode version
+        run: xcodebuild -version
+
+      - name: Resolve packages
+        run: |
+          xcodebuild \
+            -project HabitVotes.xcodeproj \
+            -scheme HabitVotes \
+            -resolvePackageDependencies
+
+      - name: Build simulator app
+        run: ./scripts/build-appetize.sh
+
+      - name: Upload Appetize zip
+        uses: actions/upload-artifact@v4
+        with:
+          name: HabitVotes-Appetize
+          path: build/Appetize/HabitVotes-Appetize.zip
+          if-no-files-found: error

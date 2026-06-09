@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		100000000000000000000001 /* HabitVotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000001 /* HabitVotesApp.swift */; };
+		100000000000000000000002 /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000002 /* AppRootView.swift */; };
+		100000000000000000000003 /* HabitEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000003 /* HabitEnums.swift */; };
+		100000000000000000000004 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000004 /* Habit.swift */; };
+		100000000000000000000005 /* HabitCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000005 /* HabitCompletion.swift */; };
+		100000000000000000000006 /* HabitSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000006 /* HabitSchedule.swift */; };
+		100000000000000000000007 /* HabitReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000007 /* HabitReminder.swift */; };
+		100000000000000000000008 /* HabitNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000008 /* HabitNote.swift */; };
+		100000000000000000000009 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000009 /* SampleData.swift */; };
+		10000000000000000000000A /* LocalReminderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000A /* LocalReminderService.swift */; };
+		10000000000000000000000B /* WidgetSnapshotWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000B /* WidgetSnapshotWriter.swift */; };
+		10000000000000000000000C /* DesignTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000C /* DesignTokens.swift */; };
+		10000000000000000000000D /* AppHaptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000D /* AppHaptics.swift */; };
+		10000000000000000000000E /* AppButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000E /* AppButtons.swift */; };
+		10000000000000000000000F /* GlassHabitCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000F /* GlassHabitCard.swift */; };
+		100000000000000000000010 /* HabitProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000010 /* HabitProgressRing.swift */; };
+		100000000000000000000011 /* ProgressVisuals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000011 /* ProgressVisuals.swift */; };
+		100000000000000000000012 /* StateViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000012 /* StateViews.swift */; };
+		100000000000000000000013 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000013 /* OnboardingView.swift */; };
+		100000000000000000000014 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000014 /* TodayView.swift */; };
+		100000000000000000000015 /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000015 /* HabitListView.swift */; };
+		100000000000000000000016 /* HabitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000016 /* HabitDetailView.swift */; };
+		100000000000000000000017 /* HabitEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000017 /* HabitEditView.swift */; };
+		100000000000000000000018 /* PreviewHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000018 /* PreviewHelpers.swift */; };
+		100000000000000000000019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000019 /* Assets.xcassets */; };
+		10000000000000000000001A /* HabitVotesCore in Frameworks */ = {isa = PBXBuildFile; productRef = 800000000000000000000002 /* HabitVotesCore */; };
+		10000000000000000000001B /* HabitVotesWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000001B /* HabitVotesWidgetBundle.swift */; };
+		10000000000000000000001C /* HabitVotesWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000001C /* HabitVotesWidget.swift */; };
+		10000000000000000000001D /* CompleteNextHabitIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000001D /* CompleteNextHabitIntent.swift */; };
+		10000000000000000000001E /* HabitVotesWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 20000000000000000000001E /* HabitVotesWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		10000000000000000000001F /* HabitVotesCoreBridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000001F /* HabitVotesCoreBridgeTests.swift */; };
+		100000000000000000000020 /* HabitVotesCore in Frameworks */ = {isa = PBXBuildFile; productRef = 800000000000000000000002 /* HabitVotesCore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		300000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 900000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 700000000000000000000002;
+			remoteInfo = HabitVotesWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		400000000000000000000001 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				10000000000000000000001E /* HabitVotesWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		200000000000000000000001 /* HabitVotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitVotesApp.swift; sourceTree = "<group>"; };
+		200000000000000000000002 /* AppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootView.swift; sourceTree = "<group>"; };
+		200000000000000000000003 /* HabitEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEnums.swift; sourceTree = "<group>"; };
+		200000000000000000000004 /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
+		200000000000000000000005 /* HabitCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCompletion.swift; sourceTree = "<group>"; };
+		200000000000000000000006 /* HabitSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitSchedule.swift; sourceTree = "<group>"; };
+		200000000000000000000007 /* HabitReminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitReminder.swift; sourceTree = "<group>"; };
+		200000000000000000000008 /* HabitNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitNote.swift; sourceTree = "<group>"; };
+		200000000000000000000009 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		20000000000000000000000A /* LocalReminderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalReminderService.swift; sourceTree = "<group>"; };
+		20000000000000000000000B /* WidgetSnapshotWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetSnapshotWriter.swift; sourceTree = "<group>"; };
+		20000000000000000000000C /* DesignTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTokens.swift; sourceTree = "<group>"; };
+		20000000000000000000000D /* AppHaptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHaptics.swift; sourceTree = "<group>"; };
+		20000000000000000000000E /* AppButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButtons.swift; sourceTree = "<group>"; };
+		20000000000000000000000F /* GlassHabitCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassHabitCard.swift; sourceTree = "<group>"; };
+		200000000000000000000010 /* HabitProgressRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitProgressRing.swift; sourceTree = "<group>"; };
+		200000000000000000000011 /* ProgressVisuals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressVisuals.swift; sourceTree = "<group>"; };
+		200000000000000000000012 /* StateViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateViews.swift; sourceTree = "<group>"; };
+		200000000000000000000013 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		200000000000000000000014 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		200000000000000000000015 /* HabitListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListView.swift; sourceTree = "<group>"; };
+		200000000000000000000016 /* HabitDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailView.swift; sourceTree = "<group>"; };
+		200000000000000000000017 /* HabitEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditView.swift; sourceTree = "<group>"; };
+		200000000000000000000018 /* PreviewHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewHelpers.swift; sourceTree = "<group>"; };
+		200000000000000000000019 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20000000000000000000001A /* HabitVotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitVotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20000000000000000000001B /* HabitVotesWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitVotesWidgetBundle.swift; sourceTree = "<group>"; };
+		20000000000000000000001C /* HabitVotesWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitVotesWidget.swift; sourceTree = "<group>"; };
+		20000000000000000000001D /* CompleteNextHabitIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteNextHabitIntent.swift; sourceTree = "<group>"; };
+		20000000000000000000001E /* HabitVotesWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HabitVotesWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		20000000000000000000001F /* HabitVotesCoreBridgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitVotesCoreBridgeTests.swift; sourceTree = "<group>"; };
+		200000000000000000000020 /* HabitVotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabitVotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		200000000000000000000021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		200000000000000000000022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		200000000000000000000023 /* HabitVotes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HabitVotes.entitlements; sourceTree = "<group>"; };
+		200000000000000000000024 /* HabitVotesWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HabitVotesWidget.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		500000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10000000000000000000001A /* HabitVotesCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		500000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		500000000000000000000003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000020 /* HabitVotesCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		600000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				600000000000000000000002 /* HabitVotes */,
+				60000000000000000000000A /* HabitVotesWidget */,
+				60000000000000000000000C /* HabitVotesTests */,
+				60000000000000000000000D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		600000000000000000000002 /* HabitVotes */ = {
+			isa = PBXGroup;
+			children = (
+				600000000000000000000003 /* App */,
+				600000000000000000000004 /* Models */,
+				600000000000000000000005 /* Services */,
+				600000000000000000000006 /* Views */,
+				600000000000000000000007 /* Components */,
+				600000000000000000000008 /* DesignSystem */,
+				600000000000000000000009 /* Resources */,
+				200000000000000000000023 /* HabitVotes.entitlements */,
+			);
+			path = HabitVotes;
+			sourceTree = "<group>";
+		};
+		600000000000000000000003 /* App */ = {isa = PBXGroup; children = (200000000000000000000001, 200000000000000000000002, ); path = App; sourceTree = "<group>"; };
+		600000000000000000000004 /* Models */ = {isa = PBXGroup; children = (200000000000000000000003, 200000000000000000000004, 200000000000000000000005, 200000000000000000000006, 200000000000000000000007, 200000000000000000000008, 200000000000000000000009, ); path = Models; sourceTree = "<group>"; };
+		600000000000000000000005 /* Services */ = {isa = PBXGroup; children = (20000000000000000000000A, 20000000000000000000000B, ); path = Services; sourceTree = "<group>"; };
+		600000000000000000000006 /* Views */ = {isa = PBXGroup; children = (200000000000000000000013, 200000000000000000000014, 200000000000000000000015, 200000000000000000000016, 200000000000000000000017, 200000000000000000000018, ); path = Views; sourceTree = "<group>"; };
+		600000000000000000000007 /* Components */ = {isa = PBXGroup; children = (20000000000000000000000E, 20000000000000000000000F, 200000000000000000000010, 200000000000000000000011, 200000000000000000000012, ); path = Components; sourceTree = "<group>"; };
+		600000000000000000000008 /* DesignSystem */ = {isa = PBXGroup; children = (20000000000000000000000C, 20000000000000000000000D, ); path = DesignSystem; sourceTree = "<group>"; };
+		600000000000000000000009 /* Resources */ = {isa = PBXGroup; children = (200000000000000000000019, 200000000000000000000021, ); path = Resources; sourceTree = "<group>"; };
+		60000000000000000000000A /* HabitVotesWidget */ = {
+			isa = PBXGroup;
+			children = (
+				20000000000000000000001B,
+				20000000000000000000001C,
+				20000000000000000000001D,
+				200000000000000000000022,
+				200000000000000000000024,
+			);
+			path = HabitVotesWidget;
+			sourceTree = "<group>";
+		};
+		60000000000000000000000C /* HabitVotesTests */ = {isa = PBXGroup; children = (20000000000000000000001F, ); path = HabitVotesTests; sourceTree = "<group>"; };
+		60000000000000000000000D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20000000000000000000001A /* HabitVotes.app */,
+				20000000000000000000001E /* HabitVotesWidget.appex */,
+				200000000000000000000020 /* HabitVotesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		700000000000000000000001 /* HabitVotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 850000000000000000000001 /* Build configuration list for PBXNativeTarget "HabitVotes" */;
+			buildPhases = (
+				750000000000000000000001 /* Sources */,
+				500000000000000000000001 /* Frameworks */,
+				760000000000000000000001 /* Resources */,
+				400000000000000000000001 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				770000000000000000000001 /* PBXTargetDependency */,
+			);
+			name = HabitVotes;
+			packageProductDependencies = (
+				800000000000000000000002 /* HabitVotesCore */,
+			);
+			productName = HabitVotes;
+			productReference = 20000000000000000000001A /* HabitVotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		700000000000000000000002 /* HabitVotesWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 850000000000000000000002 /* Build configuration list for PBXNativeTarget "HabitVotesWidget" */;
+			buildPhases = (
+				750000000000000000000002 /* Sources */,
+				500000000000000000000002 /* Frameworks */,
+				760000000000000000000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HabitVotesWidget;
+			productName = HabitVotesWidget;
+			productReference = 20000000000000000000001E /* HabitVotesWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		700000000000000000000003 /* HabitVotesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 850000000000000000000003 /* Build configuration list for PBXNativeTarget "HabitVotesTests" */;
+			buildPhases = (
+				750000000000000000000003 /* Sources */,
+				500000000000000000000003 /* Frameworks */,
+				760000000000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HabitVotesTests;
+			packageProductDependencies = (
+				800000000000000000000002 /* HabitVotesCore */,
+			);
+			productName = HabitVotesTests;
+			productReference = 200000000000000000000020 /* HabitVotesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		900000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					700000000000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					700000000000000000000002 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					700000000000000000000003 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 700000000000000000000001;
+					};
+				};
+			};
+			buildConfigurationList = 850000000000000000000004 /* Build configuration list for PBXProject "HabitVotes" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 600000000000000000000001;
+			packageReferences = (
+				800000000000000000000001 /* XCLocalSwiftPackageReference "HabitVotesCore" */,
+			);
+			productRefGroup = 60000000000000000000000D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				700000000000000000000001 /* HabitVotes */,
+				700000000000000000000002 /* HabitVotesWidget */,
+				700000000000000000000003 /* HabitVotesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		760000000000000000000001 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (100000000000000000000019 /* Assets.xcassets in Resources */, ); runOnlyForDeploymentPostprocessing = 0; };
+		760000000000000000000002 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		760000000000000000000003 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		750000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000001,
+				100000000000000000000002,
+				100000000000000000000003,
+				100000000000000000000004,
+				100000000000000000000005,
+				100000000000000000000006,
+				100000000000000000000007,
+				100000000000000000000008,
+				100000000000000000000009,
+				10000000000000000000000A,
+				10000000000000000000000B,
+				10000000000000000000000C,
+				10000000000000000000000D,
+				10000000000000000000000E,
+				10000000000000000000000F,
+				100000000000000000000010,
+				100000000000000000000011,
+				100000000000000000000012,
+				100000000000000000000013,
+				100000000000000000000014,
+				100000000000000000000015,
+				100000000000000000000016,
+				100000000000000000000017,
+				100000000000000000000018,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		750000000000000000000002 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (10000000000000000000001B, 10000000000000000000001C, 10000000000000000000001D, ); runOnlyForDeploymentPostprocessing = 0; };
+		750000000000000000000003 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (10000000000000000000001F, ); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		770000000000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 700000000000000000000002 /* HabitVotesWidget */;
+			targetProxy = 300000000000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		810000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		810000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		820000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HabitVotes/HabitVotes.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = HabitVotes/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.HabitVotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		820000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HabitVotes/HabitVotes.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = HabitVotes/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.HabitVotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		830000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = HabitVotesWidget/HabitVotesWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = HabitVotesWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.HabitVotes.HabitVotesWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		830000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = HabitVotesWidget/HabitVotesWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = HabitVotesWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.HabitVotes.HabitVotesWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		840000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.HabitVotesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HabitVotes.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HabitVotes";
+			};
+			name = Debug;
+		};
+		840000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.HabitVotesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HabitVotes.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HabitVotes";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		850000000000000000000001 /* Build configuration list for PBXNativeTarget "HabitVotes" */ = {isa = XCConfigurationList; buildConfigurations = (820000000000000000000001, 820000000000000000000002, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		850000000000000000000002 /* Build configuration list for PBXNativeTarget "HabitVotesWidget" */ = {isa = XCConfigurationList; buildConfigurations = (830000000000000000000001, 830000000000000000000002, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		850000000000000000000003 /* Build configuration list for PBXNativeTarget "HabitVotesTests" */ = {isa = XCConfigurationList; buildConfigurations = (840000000000000000000001, 840000000000000000000002, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		850000000000000000000004 /* Build configuration list for PBXProject "HabitVotes" */ = {isa = XCConfigurationList; buildConfigurations = (810000000000000000000001, 810000000000000000000002, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		800000000000000000000001 /* XCLocalSwiftPackageReference "HabitVotesCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = HabitVotesCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		800000000000000000000002 /* HabitVotesCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 800000000000000000000001 /* XCLocalSwiftPackageReference "HabitVotesCore" */;
+			productName = HabitVotesCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 900000000000000000000001 /* Project object */;
+}
